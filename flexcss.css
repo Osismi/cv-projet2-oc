@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'cmu_sans_serifbold';
+    src: url('Font/cmunsx-webfont.eot');
+    src: url('Font/cmunsx-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Font/cmunsx-webfont.woff2') format('woff2'),
+         url('Font/cmunsx-webfont.woff') format('woff'),
+         url('Font/cmunsx-webfont.ttf') format('truetype'),
+         url('Font/cmunsx-webfont.svg#cmu_sans_serifbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cmu_concreteroman';
+    src: url('Font/cmunorm-webfont.eot');
+    src: url('Font/cmunorm-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Font/cmunorm-webfont.woff2') format('woff2'),
+         url('Font/cmunorm-webfont.woff') format('woff'),
+         url('Font/cmunorm-webfont.ttf') format('truetype'),
+         url('Font/cmunorm-webfont.svg#cmu_concreteroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    font-family: 'cmu_concreteroman', Arial, Serif;
+}
+
+body
+{
+    margin: 0;
+}
+/* ---------------------------------- Haut de Page ---------------------------------- */
+header
+{
+    display: flex;
+}
+header > div:first-child 
+{
+    width: 300px;
+    background: #FBC02D;
+}
+.photo
+{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+header > div:last-child
+{
+    flex-grow: 1;
+}
+h1
+{
+    font-family: 'cmu_sans_serifbold', Arial, Serif;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    font-size: 3.5em;
+}
+em
+{
+    font-family: 'cmu_sans_serifbold', Arial, Serif;
+    font-style: normal;
+    color: #FBC02D;
+}
+h2
+{
+    margin-top: 5px;
+    margin-left: 40px;
+}
+#ligne
+{
+    border-bottom: solid 2px;
+    border-color: #FBC02D;
+}
+/* ---------------------------------- Aside ---------------------------------- */
+main
+{
+    display: flex;
+}
+
+main > aside:first-child
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: #FBC02D;
+}
+h3
+{
+	font-family: 'cmu_sans_serifbold', Arial, serif;
+	font-size: 1.7em;
+}
+.aside
+{
+    background-size: 100%;
+    background-color: #474747;
+    padding-top: 5px;
+    margin-top: 0px;
+    text-align: center;
+    color: #FBC02D;
+}
+aside li
+{
+    margin: 5px;
+    padding: 15px;
+    list-style: none;
+}
+aside p
+{
+    padding: 20px 40px 150px 40px;
+    text-align: justify;
+}
+.loisirs
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-left: 3em;
+}
+.loisirs i
+{
+    color: #474747;
+}
+/* ---------------------------------- Contenu Principal ---------------------------------- */
+main > div:last-child
+{
+    flex-grow: 2;
+}
+div section
+{
+    padding-left: 50px;
+    padding-right: 40px;
+}
+section i
+{
+    color: #FBC02D;
+    margin-right: 1em;
+}
+div h3
+{
+    display: flex;
+    position: relative;
+    padding: 40px 0px 20px 0px;
+    border-bottom: solid;
+    border-color: #FBC02D;
+    align-items: center;
+}
+.titres
+{
+    font-family: 'cmu_sans_serifbold', Arial, Serif;
+    line-height: 1;
+}
+
+.principal
+{
+    display: flex;
+}
+.liste
+{
+    display: flex;
+    margin-left: 15px;
+    width: 25%;
+}
+ol
+{
+    margin-block-start: -20px;
+}
+li
+{
+    list-style: none;
+}
+.principal li::before
+{
+    content: "\25CF";
+    color: #FBC02D;
+}
+li.current::before
+{
+    content: "\25C9";
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+h4, h5
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.principal p
+{
+    font-size: 0.8em;
+}
+.reco
+{
+    display: flex;
+    justify-content: space-around;
+}
+.reco article
+{
+    display: flex;
+    flex-direction: column;
+}
+div p
+{
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+/* ---------------------------------- Responsive ---------------------------------- */
+@media screen and (max-width: 950px)
+{
+    header, main, .reco {flex-direction: column;}
+    h1, h2, .reco {text-align: center;}
+    header > div:first-child {width: 100%;}
+    main > aside:first-child {order:2; width: 100%;}
+    h3 {font-size: 130%;}
+}
+@media screen and (max-width: 600px)
+{
+    .principal {flex-direction: column; align-items: center;}
+    .content {align-items: center; text-align: center;}
+    .principal li::before {content: none;}
+    ol {margin-block-start: 0px; padding-inline-start: 0px; text-align: center;}
+    h3 {font-size: 115%;}
+    .liste {width: max-content;}
+    
+}
