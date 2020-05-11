@@ -60,6 +60,7 @@ h1
     margin-left: 40px;
     margin-bottom: 0px;
     font-size: 3.5em;
+    line-height: 50px;
 }
 em
 {
@@ -115,6 +116,10 @@ aside p
     padding: 20px 40px 150px 40px;
     text-align: justify;
 }
+.description
+{
+    flex-grow: 1;
+}
 .loisirs
 {
     display: flex;
@@ -133,7 +138,7 @@ main > div:last-child
 }
 div section
 {
-    padding-left: 50px;
+    padding-left: 40px;
     padding-right: 40px;
 }
 section i
@@ -211,7 +216,7 @@ h4, h5
 }
 div p
 {
-    margin-top: -5px;
+    margin-top: 0px;
     margin-bottom: 25px;
 }
 /* ---------------------------------- Responsive ---------------------------------- */
@@ -219,6 +224,7 @@ div p
 {
     header, main, .reco {flex-direction: column;}
     h1, h2, .reco {text-align: center;}
+    h1, h2 {margin-left: 0px;}
     header > div:first-child {width: 100%;}
     main > aside:first-child {order:2; width: 100%;}
     h3 {font-size: 130%;}
