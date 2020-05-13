@@ -1,24 +1,26 @@
 @font-face {
-    font-family: 'cmu_sans_serifbold';
-    src: url('Font/cmunsx-webfont.eot');
-    src: url('Font/cmunsx-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Font/cmunsx-webfont.woff2') format('woff2'),
-         url('Font/cmunsx-webfont.woff') format('woff'),
-         url('Font/cmunsx-webfont.ttf') format('truetype'),
-         url('Font/cmunsx-webfont.svg#cmu_sans_serifbold') format('svg');
+    font-family: 'cmu_concreteroman';
+    src: url('../Font/cmunorm-webfont-webfont.eot');
+    src: url('../Font/cmunorm-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Font/cmunorm-webfont-webfont.woff2') format('woff2'),
+         url('../Font/cmunorm-webfont-webfont.woff') format('woff'),
+         url('../Font/cmunorm-webfont-webfont.ttf') format('truetype'),
+         url('../Font/cmunorm-webfont-webfont.svg#cmu_concreteroman') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 @font-face {
-    font-family: 'cmu_concreteroman';
-    src: url('Font/cmunorm-webfont.eot');
-    src: url('Font/cmunorm-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Font/cmunorm-webfont.woff2') format('woff2'),
-         url('Font/cmunorm-webfont.woff') format('woff'),
-         url('Font/cmunorm-webfont.ttf') format('truetype'),
-         url('Font/cmunorm-webfont.svg#cmu_concreteroman') format('svg');
+    font-family: 'cmu_sans_serifbold';
+    src: url('../Font/cmunsx-webfont-webfont.eot');
+    src: url('../Font/cmunsx-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Font/cmunsx-webfont-webfont.woff2') format('woff2'),
+         url('../Font/cmunsx-webfont-webfont.woff') format('woff'),
+         url('../Font/cmunsx-webfont-webfont.ttf') format('truetype'),
+         url('../Font/cmunsx-webfont-webfont.svg#cmu_sans_serifbold') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 *
@@ -47,6 +49,7 @@ header > div:first-child
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
+    filter: drop-shadow(0 0 0.5rem rgb(189, 119, 15));
 }
 
 header > div:last-child
@@ -100,7 +103,7 @@ h3
 {
     background-size: 100%;
     background-color: #474747;
-    padding-top: 5px;
+    padding-top: 3px;
     margin-top: 0px;
     text-align: center;
     color: #FBC02D;
@@ -213,11 +216,17 @@ h4, h5
 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
+}
+strong
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: -10px;
 }
 div p
 {
     margin-top: 0px;
-    margin-bottom: 25px;
 }
 /* ---------------------------------- Responsive ---------------------------------- */
 @media screen and (max-width: 950px)
@@ -239,3 +248,9 @@ div p
     .liste {width: max-content;}
     
 }
+
+
+
+
+
+
