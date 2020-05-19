@@ -173,28 +173,31 @@ div h3
 {
     display: flex;
 }
+.current
+{
+    display: flex;
+    margin-left: 15px;
+    width: 25%;
+    font-size: 1.3em;
+}
+.current::before
+{
+    content: "\25C9";
+    color: #FFC107;
+    padding-right: 30px;
+}
 .liste
 {
     display: flex;
     margin-left: 15px;
     width: 25%;
+    font-size: 1.3em;
 }
-ol
-{
-    margin-block-start: -20px;
-}
-li
-{
-    list-style: none;
-}
-.principal li::before
+.liste::before
 {
     content: "\25CF";
     color: #FFC107;
-}
-li.current::before
-{
-    content: "\25C9";
+    padding-right: 30px;
 }
 .content
 {
@@ -252,10 +255,13 @@ div p
 {
     .principal {flex-direction: column; align-items: center;}
     .content {align-items: center; text-align: center;}
-    .principal li::before {content: none;}
-    ol {margin-block-start: 0px; padding-inline-start: 0px; text-align: center;}
+    .current::before {content: none;}
+    .current {align-items: center; text-align: center; width: max-content;}
+    .current p {margin-bottom: 0px;}
+    .liste::before {content: none;}
+    .liste {align-items: center; text-align: center; width: max-content;}
+    .liste p {margin-bottom: 0px;}
     h3 {font-size: 115%;}
-    .liste {width: max-content;}
 }
 
 
