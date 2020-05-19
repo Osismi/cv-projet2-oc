@@ -37,19 +37,23 @@ header
 {
     display: flex;
 }
+
 header > div:first-child 
 {
     width: 300px;
-    background: #FBC02D;
+    background: #FFC107;
 }
 .photo
 {
     border-radius: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
     filter: drop-shadow(0 0 0.5rem rgb(189, 119, 15));
+}
+.lien
+{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
 }
 
 header > div:last-child
@@ -69,7 +73,7 @@ em
 {
     font-family: 'cmu_sans_serifbold', Arial, Serif;
     font-style: normal;
-    color: #FBC02D;
+    color: #FFC107;
 }
 h2
 {
@@ -79,7 +83,7 @@ h2
 #ligne
 {
     border-bottom: solid 2px;
-    border-color: #FBC02D;
+    border-color: #FFC107;
 }
 /* ---------------------------------- Aside ---------------------------------- */
 main
@@ -92,7 +96,7 @@ main > aside:first-child
     display: flex;
     flex-direction: column;
     width: 300px;
-    background: #FBC02D;
+    background: #FFC107;
 }
 h3
 {
@@ -102,11 +106,12 @@ h3
 .aside
 {
     background-size: 100%;
-    background-color: #474747;
-    padding-top: 3px;
+    background-color: #424242;
+    padding-top: 4px;
+    padding-bottom: 3px;
     margin-top: 0px;
     text-align: center;
-    color: #FBC02D;
+    color: #FFC107;
 }
 aside li
 {
@@ -116,7 +121,7 @@ aside li
 }
 aside p
 {
-    padding: 0px 20px 0px 20px;
+    padding: 20px 30px 20px 30px;
     text-align: justify;
 }
 .description
@@ -132,7 +137,7 @@ aside p
 }
 .loisirs i
 {
-    color: #474747;
+    color: #424242;
 }
 /* ---------------------------------- Contenu Principal ---------------------------------- */
 main > div:last-child
@@ -146,7 +151,7 @@ div section
 }
 section i
 {
-    color: #FBC02D;
+    color: #FFC107;
     margin-right: 1em;
 }
 div h3
@@ -155,7 +160,7 @@ div h3
     position: relative;
     padding-bottom: 20px;
     border-bottom: solid;
-    border-color: #FBC02D;
+    border-color: #FFC107;
     align-items: center;
 }
 .titres
@@ -185,7 +190,7 @@ li
 .principal li::before
 {
     content: "\25CF";
-    color: #FBC02D;
+    color: #FFC107;
 }
 li.current::before
 {
