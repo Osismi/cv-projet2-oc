@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'cmu_concreteroman';
-    src: url('../Font/cmunorm-webfont-webfont.eot');
-    src: url('../Font/cmunorm-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../Font/cmunorm-webfont-webfont.woff2') format('woff2'),
-         url('../Font/cmunorm-webfont-webfont.woff') format('woff'),
-         url('../Font/cmunorm-webfont-webfont.ttf') format('truetype'),
-         url('../Font/cmunorm-webfont-webfont.svg#cmu_concreteroman') format('svg');
+    src: url('../font/cmunorm-webfont-webfont.eot');
+    src: url('../font/cmunorm-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/cmunorm-webfont-webfont.woff2') format('woff2'),
+         url('../font/cmunorm-webfont-webfont.woff') format('woff'),
+         url('../font/cmunorm-webfont-webfont.ttf') format('truetype'),
+         url('../font/cmunorm-webfont-webfont.svg#cmu_concreteroman') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'cmu_sans_serifbold';
-    src: url('../Font/cmunsx-webfont-webfont.eot');
-    src: url('../Font/cmunsx-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../Font/cmunsx-webfont-webfont.woff2') format('woff2'),
-         url('../Font/cmunsx-webfont-webfont.woff') format('woff'),
-         url('../Font/cmunsx-webfont-webfont.ttf') format('truetype'),
-         url('../Font/cmunsx-webfont-webfont.svg#cmu_sans_serifbold') format('svg');
+    src: url('../font/cmunsx-webfont-webfont.eot');
+    src: url('../font/cmunsx-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/cmunsx-webfont-webfont.woff2') format('woff2'),
+         url('../font/cmunsx-webfont-webfont.woff') format('woff'),
+         url('../font/cmunsx-webfont-webfont.ttf') format('truetype'),
+         url('../font/cmunsx-webfont-webfont.svg#cmu_sans_serifbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -59,7 +59,7 @@ header > div:last-child
 h1
 {
     font-family: 'cmu_sans_serifbold', Arial, Serif;
-    margin-top: 60px;
+    margin-top: 90px;
     margin-left: 40px;
     margin-bottom: 0px;
     font-size: 3.5em;
@@ -116,7 +116,7 @@ aside li
 }
 aside p
 {
-    padding: 20px 40px 150px 40px;
+    padding: 0px 20px 0px 20px;
     text-align: justify;
 }
 .description
@@ -153,7 +153,7 @@ div h3
 {
     display: flex;
     position: relative;
-    padding: 40px 0px 20px 0px;
+    padding-bottom: 20px;
     border-bottom: solid;
     border-color: #FBC02D;
     align-items: center;
@@ -196,7 +196,7 @@ li.current::before
     display: flex;
     flex-direction: column;
     margin-left: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 h4, h5
 {
@@ -228,12 +228,17 @@ div p
 {
     margin-top: 0px;
 }
+.citation
+{
+    margin-top: -10px;
+}
 /* ---------------------------------- Responsive ---------------------------------- */
 @media screen and (max-width: 950px)
 {
     header, main, .reco {flex-direction: column;}
     h1, h2, .reco {text-align: center;}
-    h1, h2 {margin-left: 0px;}
+    h1 {margin-top: 30px; margin-left: 0px;}
+    h2 {margin-top: 15px; margin-left: 0px;}
     header > div:first-child {width: 100%;}
     main > aside:first-child {order:2; width: 100%;}
     h3 {font-size: 130%;}
@@ -246,7 +251,6 @@ div p
     ol {margin-block-start: 0px; padding-inline-start: 0px; text-align: center;}
     h3 {font-size: 115%;}
     .liste {width: max-content;}
-    
 }
 
 
